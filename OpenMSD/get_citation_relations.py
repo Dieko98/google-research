@@ -88,6 +88,7 @@ def remove_repeated_pairs(pairs_pcoll, pair_type):
   def remove_duplicate(joined_result):
     candidates = set(joined_result[1])
     for cand in candidates:
+      
       yield (joined_result[0], cand)
 
   deduplicated_pairs = (
